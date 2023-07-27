@@ -1,0 +1,113 @@
+/* GENERAL */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 14px;
+}
+
+/* màu bảng+trên dưới cho từng phần trong mảng 1 và 2 */
+.border {
+  background-color: aliceblue;
+  padding: 10px 0 40px 0;
+}
+.border > .title {
+  border-bottom: 1px solid rgb(212, 201, 201);
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+  color: blue;
+}
+
+/* cho cột 1 */
+.part {
+  border-bottom: 1px solid rgba(199, 199, 199, 0.692);
+}
+.part > .icon {
+  margin: 0 auto;
+}
+.deco {
+  margin-right: 20px;
+}
+/* end cho cột 1 */
+/* trang trí bảng 2 */
+.dots-deco {
+  border-bottom: 1px dotted green;
+  text-align: start;
+}
+.time {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  border-radius: 120px;
+  border: 1px solid grey;
+  background-color: rgba(223, 156, 223, 0.705);
+  color: #f7f7f7f8;
+  padding: 2px 0;
+  font-size: 20px;
+  margin-right: 10px;
+}
+/* khung cho bảng */
+.paddings {
+  padding: 10px;
+}
+/* end khung cho bảng*/
+
+/* kiểu in đậm cho đề mục nhỏ */
+.text {
+  font-weight: 600;
+}
+
+/* khoảng cách icon và chữ trong 2 và 4 */
+.margin {
+  margin-right: 10px;
+}
+@media only screen and (max-width: 600px) {
+  .container {
+    max-width: 300px;
+    width: 100%;
+    margin: 5px auto;
+    background-color: blue;
+    box-shadow: 5px 5px 5px 0 rgba(0, 0, 0, 0.5);
+  }
+  .marginb {
+    margin-bottom: 10px;
+  }
+  .margin-b {
+    margin-bottom: 10px;
+  }
+}
+@media only screen and (min-width: 600px) and (max-width: 768px) {
+  /* khoảng cách cho 2 cột trong bảng 1 và bảng 2 */
+  .marginb {
+    margin-bottom: 10px;
+  }
+  .container {
+    max-width: 660px;
+    width: 100%;
+    margin: 5px auto;
+    background-color: blue;
+    box-shadow: 5px 5px 5px 0 rgba(0, 0, 0, 0.5);
+  }
+  .margin-b {
+    margin-bottom: 10px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .container {
+    max-width: 770px;
+    width: 100%;
+    margin: 5px auto;
+    background-color: blue;
+    box-shadow: 5px 5px 5px 0 rgba(0, 0, 0, 0.5);
+  }
+  /* khoảng cách 2 cột trong bảng 1 */
+  .margin-r {
+    margin-right: 10px;
+  }
+
+  .margin-b {
+    margin-bottom: 10px;
+  }
+  /* end khoảng cách 2 cột trong bảng 1 */
+}

@@ -1,0 +1,503 @@
+@media only screen and (min-width: 768px) {
+  /* GENERAL */
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  :root {
+    --color-primary: #199cdb;
+  }
+  .bg-grey {
+    background: #f7f7f7;
+  }
+  body {
+    line-height: 20px;
+  }
+  section > .container {
+    width: 960px;
+    margin: auto;
+  }
+
+  #nav-bar {
+    text-align: center;
+  }
+
+  /* end general */
+  /* BANNER */
+  .banner {
+    height: 75vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+      url("../images/banner.jpg");
+    width: 100%;
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .banner-info {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: rgba(255, 255, 255, 0.836);
+    width: 100%;
+    text-align: center;
+    text-shadow: 0 2px 2px grey;
+  }
+  .banner-info h1 {
+    font-family: "Roboto", Tahoma, sans-serif;
+    margin-bottom: 15px;
+  }
+  .banner-info p {
+    font-family: "Roboto", Tahoma, sans-serif;
+    font-size: 12px;
+    color: #f7f7f788;
+  }
+  /* end banner */
+  /*NAV */
+  #nav-bar {
+    position: relative;
+  }
+  .nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+  }
+  .items {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    border-left: 1px solid rgb(196, 189, 189);
+    padding: 10px 0;
+  }
+  .right {
+    border-right: 1px solid rgb(196, 189, 189);
+  }
+  .items:hover {
+    background-color: rgba(0, 225, 255, 0.801);
+    border-radius: 5px;
+  }
+  .item {
+    font-family: sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    text-transform: uppercase;
+  }
+  .item-banner {
+    padding: 0 70px;
+  }
+  .item-banner > .title {
+    font-family: "Roboto", Tahoma, sans-serif;
+    font-size: 14px;
+  }
+  .item-banner > .sub-title {
+    font-family: "Roboto", Tahoma, sans-serif;
+    font-size: 10px;
+    color: grey;
+  }
+  .nav > .advanced {
+    background-image: url("../images/avatar.jpg");
+    width: 220px;
+    height: 220px;
+    position: absolute;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 120px;
+    border: 5px solid white;
+    left: 565px;
+  }
+  .container a {
+    text-decoration: none;
+    color: black;
+  }
+  .container a i {
+    color: var(--color-primary);
+  }
+
+  /* end nav */
+  /* TARGET+INFO */
+  /* mục tiêu nghề nghiệp */
+  #target > .section-title {
+    font-family: sans-serif;
+    margin-bottom: 30px;
+    font-weight: 500;
+    font-size: 28px;
+  }
+  #target > .sub-title {
+    font-family: sans-serif;
+    margin-bottom: 5px;
+    font-size: 14px;
+    font-weight: 300;
+    color: grey;
+  }
+  #target {
+    margin-top: 100px;
+  }
+  /* end mục tiêu nghề nghiệp*/
+  /* thông tin cá nhân */
+  #personal-info > .section-title {
+    font-family: sans-serif;
+    margin-bottom: 30px;
+    font-weight: 500;
+    font-size: 28px;
+  }
+  #personal-info {
+    margin-top: 100px;
+  }
+  .info- {
+    color: rgba(0, 0, 0, 0.74);
+    display: inline-block;
+    font-family: sans-serif;
+    margin-bottom: 5px;
+    font-size: 14px;
+  }
+  .info {
+    font-family: sans-serif;
+    margin-bottom: 5px;
+    font-size: 14px;
+    font-weight: 300;
+    color: grey;
+    display: inline-block;
+  }
+
+  .icon-twitter:hover,
+  .icon-facebook:hover,
+  .icon-gplus:hover,
+  .icon-linkedin:hover {
+    color: aqua;
+  }
+  .icon-twitter,
+  .icon-facebook,
+  .icon-gplus,
+  .icon-linkedin {
+    display: inline-block;
+    color: var(--color-primary);
+    width: 24px;
+    height: 24px;
+  }
+  /* end thông tin cá nhân */
+  /*end */
+
+  /*JOB+INFO*/
+  /* khung */
+
+  .grid-6 {
+    border: 1.5px solid rgb(230, 225, 225);
+    padding: 50px 20px;
+    display: inline-block;
+    margin-left: 20px;
+  }
+  /* end khung */
+  /* tựa đề */
+  .a-quarter {
+    display: grid;
+    grid-template-columns: 80% 20%;
+    padding-bottom: 50px;
+  }
+  .a-quarter > h2 {
+    justify-self: start;
+    align-self: center;
+    font-family: sans-serif;
+    font-weight: 500;
+    font-size: 28px;
+  }
+
+  .ic-toolbox,
+  .ic-pencil,
+  .ic-telescope,
+  .ic-mic,
+  .ic-tools-2 {
+    justify-self: center;
+    align-self: start;
+    transform: scale(2);
+    color: grey;
+  }
+  /* end tựa đề */
+  /* chấm theo phần */
+  .apart {
+    position: relative;
+    padding-left: 20px;
+  }
+  .apart::before {
+    position: absolute;
+    content: "\2022";
+    transform: scale(1.5);
+    color: var(--color-primary);
+    top: -2px;
+    left: -1px;
+  }
+  /* end chấm theo phần */
+  .apart > h3 {
+    font-family: Tahoma;
+    font-size: 14px;
+    font-weight: 540;
+  }
+  .time {
+    color: rgb(151, 151, 151);
+    font-family: sans-serif;
+    font-weight: 200;
+    font-style: italic;
+    font-size: 12px;
+  }
+  /* khung thời gian */
+  .border {
+    display: inline-block;
+    width: 60px;
+    height: 20px;
+    text-align: center;
+    border-radius: 12px;
+    background-color: var(--color-primary);
+    color: #f7f7f7f8;
+  }
+  .idea {
+    color: grey;
+    font-family: sans-serif;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    font-size: 12px;
+    font-weight: 500;
+  }
+
+  /* icons for hobby */
+  .icon-hobby {
+    display: grid;
+    grid-template-columns: repeat(4, 25%);
+    justify-content: space-around;
+    align-items: start;
+    justify-items: center;
+    gap: 5px;
+    margin-bottom: 100px;
+  }
+
+  .icons-hobby > p {
+    font-family: sans-serif;
+    color: grey;
+    text-align: center;
+    font-size: 11.5px;
+    font-weight: 500;
+    margin-top: 10px;
+  }
+
+  .ic-megaphone,
+  .ic-basket {
+    color: var(--color-primary);
+    width: 54px;
+    height: 54px;
+    border: 1.5px solid var(--color-primary);
+    border-radius: 50px;
+    padding: 18px 16px;
+  }
+  .ic-hotairballoon,
+  .ic-strategy {
+    color: var(--color-primary);
+    width: 56px;
+    height: 54px;
+    border: 1.5px solid var(--color-primary);
+    border-radius: 50px;
+    padding: 17px 20px;
+  }
+  /* end for this part */
+
+  /* language skills */
+  .three {
+    margin-bottom: 20px;
+  }
+  .three > h3 {
+    font-family: Tahoma;
+    font-size: 14px;
+    font-weight: 540;
+  }
+  .exp-bar {
+    background: rgb(230, 225, 225);
+    display: inline-block;
+    height: 2px;
+    margin-right: 10px;
+    width: 45px;
+  }
+  .fill {
+    background: var(--color-primary);
+  }
+
+  /* end */
+  /* CERTIFICATE */
+  /* khung+tựa đề */
+  .certificates {
+    margin: 40px 220px;
+  }
+  .certificates > h2 {
+    padding: 40px 0;
+    font-family: sans-serif;
+    font-weight: 500;
+  }
+  /* end khung+tựa đề  */
+  /* chia cho 2 chứng chỉ đầu */
+  .container-3 {
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    padding: 20px;
+  }
+  .certificate,
+  .certificate-s {
+    display: grid;
+    grid-template-columns: 35% 65%;
+    gap: 10px;
+  }
+
+  .detail > h3 {
+    font-family: Tahoma;
+    font-size: 14px;
+    font-weight: 540;
+    margin-bottom: 15px;
+  }
+  .details {
+    font-family: sans-serif;
+    color: grey;
+    font-size: 11.5px;
+    font-weight: 500;
+  }
+  /*  end chia cho 2 chứng chỉ đầu */
+  /* chia cho chứng chỉ cuối +viền*/
+  .container-1 {
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    border-top: 1px solid #d6c08d;
+    padding: 20px;
+  }
+  /* end chia cho chứng chỉ cuối+viền*/
+  /* chia cho chứng chỉ 2+viền */
+  .certificate-2 {
+    display: grid;
+    grid-template-columns: 35% 65%;
+    border-left: 1px solid #d6c08d;
+    padding-left: 10px;
+    gap: 10px;
+  }
+  .certificate-s > img,
+  .certificate-2 > img,
+  .certificate > img {
+    object-fit: contain;
+    width: 150px;
+  }
+
+  .detail-2 > h3 {
+    font-family: Tahoma;
+    font-size: 14px;
+    font-weight: 540;
+    margin-bottom: 15px;
+  }
+  .detailss {
+    font-family: sans-serif;
+    color: grey;
+    font-size: 11.5px;
+    font-weight: 500;
+  }
+
+  /*end chia cho chứng chỉ 2+viền */
+
+  /* end */
+  /* PROJECTS */
+  /* tựa đề */
+  #project > h2 {
+    padding: 40px 200px;
+    font-family: sans-serif;
+    font-weight: 500;
+  }
+  /* end tựa đề */
+  /* khung */
+  .container3 {
+    display: grid;
+    justify-content: center;
+    align-items: stretch;
+    grid-template-columns: repeat(3, 22%);
+    gap: 20px;
+  }
+  .project {
+    border: 1px solid rgb(230, 225, 225);
+    display: flex;
+    flex-direction: column;
+  }
+  .project > img {
+    object-fit: contain;
+  }
+  /* end khung */
+  /* tên dự án */
+  .item-project > h3 {
+    color: black;
+    font-family: Tahoma;
+    font-size: 14px;
+    font-weight: 545;
+    padding: 10px 20px;
+  }
+  /* end tên dự án */
+  .nav-info {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+    color: grey;
+    font-family: sans-serif;
+    border-top: 1px solid rgb(230, 225, 225);
+    font-size: 12px;
+    font-weight: 500;
+    padding: 10px 20px;
+  }
+  .nav-infos {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+    color: grey;
+    font-family: sans-serif;
+    font-size: 12px;
+    font-weight: 500;
+    padding: 10px 20px;
+  }
+  /* khung thời gian */
+  .box-time {
+    background-color: var(--color-primary);
+    color: #f7f7f7;
+    border-radius: 20px;
+    padding: 5px 10px;
+  }
+  /* khung thời gian */
+  /* nd của dự án */
+  .detail-project {
+    display: grid;
+    grid-template-columns: 30% 70%;
+    align-items: start;
+    justify-content: flex-start;
+    gap: 5px;
+    color: grey;
+    font-family: sans-serif;
+    padding: 5px;
+    border-top: 1px solid rgb(230, 225, 225);
+    font-size: 12px;
+    font-weight: 500;
+  }
+
+  /* end nd của dự án */
+  /* end */
+  /*FOOTER */
+  .iconr {
+    font-family: sans-serif;
+    font-size: 14px;
+    font-weight: 100;
+    color: grey;
+  }
+  .icon-facebook-circled:hover,
+  .icon-linkedin-circled:hover,
+  .icon-github-circled:hover {
+    color: aqua;
+  }
+  .icon-facebook-circled,
+  .icon-linkedin-circled,
+  .icon-github-circled {
+    display: inline-block;
+    color: var(--color-primary);
+    padding-right: 5px;
+    transform: scale(2);
+  }
+  /* end */
+}
